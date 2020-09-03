@@ -5,23 +5,23 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
- * Unit test for simple App.
+ * Unit test_ for simple App.
  */
 public class AppTest extends TestCase {
 	
 	private MySetData<Object> mySet = new MySetData<Object>();
 	
 	/**
-	   * Sets up the test fixture. 
-	   * (Called before every test case method.)
+	   * Sets up the test_ fixture. 
+	   * (Called before every test_ case method.)
 	   */
 	  public void setUp() {
 		  mySet = new MySetData<Object>();
 	  }
 
 	  /**
-	   * Tears down the test fixture. 
-	   * (Called after every test case method.)
+	   * Tears down the test_ fixture. 
+	   * (Called after every test_ case method.)
 	   */
 	  public void tearDown() {
 		  mySet = null;
@@ -29,16 +29,16 @@ public class AppTest extends TestCase {
 	  
 	  
 	/**
-	 * Create the test case
+	 * Create the test_ case
 	 *
-	 * @param testName name of the test case
+	 * @param test_Name name of the test_ case
 	 */
-	public AppTest(String testName) {
-		super(testName);
+	public AppTest(String test_Name) {
+		super(test_Name);
 	}
 
 	/**
-	 * @return the suite of tests being tested
+	 * @return the suite of test_s being test_ed
 	 */
 	public static Test suite() {
 		return new TestSuite(AppTest.class);
@@ -47,15 +47,15 @@ public class AppTest extends TestCase {
 	/**
 	 * Rigourous Test :-)
 	 */
-	public void testApp() {
+	public void test_App() {
 		assertTrue(true);
 	}
 	
-	public void testfirstTest() {
+	public void test_firstTest() {
 		System.out.println("hello world, Alonso");
 	}
 	
-	public void testwhenAddingValueItInserts() {
+	public void test_whenAddingValueItInserts() {
 		Object someObject = "first";
 		boolean isAdded = mySet.add(someObject );
 		assertTrue("added",isAdded);
@@ -64,7 +64,7 @@ public class AppTest extends TestCase {
 		assertEquals(anotherObject, someObject);
 	}
 	
-	public void testwhen_Adding_Value_I_can_delete_It() {
+	public void test_when_Adding_Value_I_can_delete_It() {
 		
 		Object someObject = "first";
 		boolean isAdded = mySet.add(someObject );
@@ -77,7 +77,7 @@ public class AppTest extends TestCase {
 		assertTrue(mySet.size() == 0);
 	}
 	
-	public void testwhen_NotKeyIsPresent_I_cannot_delete_It() {
+	public void test_when_NotKeyIsPresent_I_cannot_delete_It() {
 	
 		Object someObject = "first";
 		boolean isDeleted = mySet.drop(someObject);
@@ -86,7 +86,7 @@ public class AppTest extends TestCase {
 		assertTrue(mySet.size() == 0);
 	}
 	
-	public void testwhen_AddedSameValue_OnlyOneValueRemains() {
+	public void test_when_AddedSameValue_OnlyOneValueRemains() {
 		boolean isAdded = mySet.add("first");
 		assertTrue("added",isAdded);
 		int actualSize = mySet.size();
@@ -97,7 +97,7 @@ public class AppTest extends TestCase {
 		
 	}
 	
-	public void testwhen_AddedTwoDifferentValues_IHaveTwoDifferentValues() {
+	public void test_when_AddedTwoDifferentValues_IHaveTwoDifferentValues() {
 		boolean isAdded = mySet.add("first");
 		assertTrue("added",isAdded);
 		int actualSize = mySet.size();
@@ -109,7 +109,7 @@ public class AppTest extends TestCase {
 		assertEquals(2, actualSize);
 	}
 	
-	public void testwhen_AddedTwoDifferentValues_ICanSortThem() {
+	public void test_when_AddedTwoDifferentValues_ICanSortThem() {
 		boolean isAdded = mySet.add("first");
 		assertTrue("added",isAdded);
 		
@@ -122,7 +122,7 @@ public class AppTest extends TestCase {
 		mySet.sorted();
 	}
 	
-	public void testwhen_AddedDifferentTypesOfValues_I_have_the_correct_count() {
+	public void test_when_AddedDifferentTypesOfValues_I_have_the_correct_count() {
 		boolean isAdded = mySet.add("first");
 		assertTrue("added",isAdded);
 		
@@ -153,7 +153,7 @@ public class AppTest extends TestCase {
 
 	}
 	
-	public void testwhen_Added_I_can_recoverIt() {
+	public void test_when_Added_I_can_recoverIt() {
 		
 		Object some = "first";
 		boolean isAdded = mySet.add(some);
@@ -163,7 +163,7 @@ public class AppTest extends TestCase {
 		assertEquals(Anothersome ,some);
 	}
 	
-	public void testwhen_notAdded_I_Cannot_recoverIt() {
+	public void test_when_notAdded_I_Cannot_recoverIt() {
 		
 		Object some = "first";
 		
@@ -172,11 +172,11 @@ public class AppTest extends TestCase {
 		assertTrue(mySet.size() == 0);
 	}
 	
-	public void testis_EmptyTheDataSet() {
+	public void test_is_EmptyTheDataSet() {
 		assertTrue("should be true",mySet.isEmpty());
 	}
 	
-	public void testis_NotEmptyTheDataSet() {
+	public void test_is_NotEmptyTheDataSet() {
 		
 		Object some = "first";
 		boolean isAdded = mySet.add(some);

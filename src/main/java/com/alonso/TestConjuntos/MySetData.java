@@ -27,6 +27,7 @@ public class MySetData<E> extends AbstractSet<E> implements Set<E>,Cloneable, ja
 	public boolean isEmpty() {
 		return myMap.size() == 0;
 	}
+	
 	@SuppressWarnings("unchecked")
 	@Override
 	public Iterator<E> iterator() {
