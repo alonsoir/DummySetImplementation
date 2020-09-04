@@ -14,8 +14,8 @@ public class MySetData<E> extends AbstractSet<E> implements Set<E>, Cloneable, j
 	// es decir, en caso de que querramos guardar a disco el contenido de este
 	// objeto, cuando querramos recuperarlo,
 	// esos datos no estarán.
-	private transient Map<E, Object> myMap;
-	private Object DUMMYOBJECT = new Object();
+	private final transient Map<E, Object> myMap;
+	private final Object DUMMYOBJECT = new Object();
 
 	public MySetData() {
 		/*
